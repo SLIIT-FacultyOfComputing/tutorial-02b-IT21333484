@@ -18,16 +18,21 @@ using namespace std;
 
 int main()
 {
+  // VARIABLES
    double salary, netSalary;
    int etype, otHrs, otRate;
 
+  //INPUTS
    cout<<"Enter Employee Type : ";
    cin>>etype;
+
    cout<<"Enter Salary  : ";
    cin>>salary;
+
    cout<<"Enter OtHrs : ";
    cin>>otHrs; 
    
+   //VALIDATIONS
    switch (etype) {
       case 1 :
           otRate = 1000;
@@ -40,7 +45,7 @@ int main()
           break;
    }
 
-
+  // CALC & OUTPUT
    netSalary = salary + otHrs* otRate;
    cout<<"Net Salary is "<<netSalary;
   
